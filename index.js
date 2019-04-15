@@ -43,14 +43,24 @@ function newMessage() {
 	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
 };
 
+function newHug() {
+	$('<li class="sent"><img src="https://tenor.com/view/milk-and-mocha-hug-cute-kawaii-love-gif-12535134" alt="" /></li>').appendTo($('.messages ul'));
+	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
+};
+
 $('.submit').click(function() {
   newMessage();
 });
 
-// $(window).on('keydown', function(e) {
-//   if (e.which == 13) {
-//     newMessage();
-//     return false;
-//   }
-// });
+$('.button-hug').click(function() {
+  newHug();
+});
+
+$(window).on('keydown', function(e) {
+  if (e.which == 13) {
+    newMessage();
+    return false;
+  }
+});
+
 //# sourceURL=pen.js
