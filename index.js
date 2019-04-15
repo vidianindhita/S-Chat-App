@@ -44,7 +44,7 @@ function newMessage() {
 };
 
 function newHug() {
-	$('<li class="sent"><img src="https://tenor.com/view/milk-and-mocha-hug-cute-kawaii-love-gif-12535134" alt="" /></li>').appendTo($('.messages ul'));
+	$('<li class="sent"><img src="assets/hug.gif" alt="" /></li>').appendTo($('.messages ul'));
 	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
 };
 
